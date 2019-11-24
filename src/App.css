@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system,  Roboto, "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #4ECDC4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+h2{
+  padding: 0 20px;
+  color: #fff;
+  font:700 1.6em Roboto;
+  text-transform: uppercase;
+}
+
+.product a, p{
+  display: flex;
+  position: relative;
+  padding: 20px;
+  margin: 0 0 20px;
+  color: #fff;
+  font:400 1.2em Roboto;
+}
+
+.product a:hover{
+  color: #4ECDC4;
+  text-decoration: none;
+}
+
+img{
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  width: auto;
+}
+
+.spinner {
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  width: 64px;
+  height: 64px;
+}
+.spinner:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #000;
+  border-color: #000 transparent #000 transparent;
+  animation: spinner 1.2s infinite;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
