@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchSingleProduct } from '../store/actions';
 
-
 class List extends React.Component {
     constructor(props) {
         super(props)

@@ -19,7 +19,6 @@ class Items extends React.Component {
             return (
                 <div className="product" key={product.id}>
                     <Link to={`/item/${product.id}`} className="z-depth-3">
-
                         <Item
                             name={product.name}
                             description={product.description}>
@@ -32,6 +31,7 @@ class Items extends React.Component {
 
 
     render() {
+
         const { error, loading } = this.props;
 
         if (error) {
@@ -44,7 +44,6 @@ class Items extends React.Component {
 
         return (
             <React.Fragment>
-              
                 <div className="container product-list">
                     <div className="row">
                         <div className="col s12 m4">

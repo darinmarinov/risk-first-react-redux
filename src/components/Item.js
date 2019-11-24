@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Item = ( { name, description, address} = this.props) => {
-
     return (
         <React.Fragment>
            <span className='col s12 m4'>
